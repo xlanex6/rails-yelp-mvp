@@ -1,4 +1,4 @@
-class AddRefToREstaurantOnReview < ActiveRecord::Migration[5.0]
+class AddRestaurantReferencesToReviews < ActiveRecord::Migration[5.0]
   def change
     add_reference(:reviews, :restaurant, foreign_key: true)
   end
